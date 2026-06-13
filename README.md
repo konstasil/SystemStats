@@ -98,6 +98,9 @@ SystemStats only reads system statistics and does not collect or transmit any pe
 ## Donate
 
 TON: UQAUUmV4gogvx6sR4Fa06M31L8PKOd7u7T0QEg22Jy6cYUV-
+
 USDT BEP-20:0x5E68839F576dc8229b11b88b24D6D616f849346E
+
 LTC: ltc1qgu3nxwfkkx35r77y8zwh57nt77cm9qjpxndm52
+
 USDT TRC20: TXwQAni5TFHNpk41DthigGftXZVcsS2sxv
