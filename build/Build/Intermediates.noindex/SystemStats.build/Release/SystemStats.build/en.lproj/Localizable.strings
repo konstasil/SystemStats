@@ -18,6 +18,8 @@
 	<string>Quit</string>
 	<key>menu.settings</key>
 	<string>Settings...</string>
+	<key>menu.update</key>
+	<string>Check for Updates</string>
 	<key>settings.cpu</key>
 	<string>Show CPU Usage</string>
 	<key>settings.display</key>
@@ -46,5 +48,13 @@
 	<string>Appearance</string>
 	<key>settings.tab.general</key>
 	<string>General</string>
+	<key>update.available</key>
+	<string>Update Available</string>
+	<key>update.download</key>
+	<string>Download</string>
+	<key>update.notification.body</key>
+	<string>Version %@ is available</string>
+	<key>update.version</key>
+	<string>Version %@</string>
 </dict>
 </plist>

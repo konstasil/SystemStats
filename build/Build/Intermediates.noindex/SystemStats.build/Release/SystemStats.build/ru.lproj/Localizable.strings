@@ -18,6 +18,8 @@
 	<string>Выйти</string>
 	<key>menu.settings</key>
 	<string>Настройки...</string>
+	<key>menu.update</key>
+	<string>Проверить обновления</string>
 	<key>settings.cpu</key>
 	<string>Показывать загрузку CPU</string>
 	<key>settings.display</key>
@@ -46,5 +48,13 @@
 	<string>Внешний вид</string>
 	<key>settings.tab.general</key>
 	<string>Основные</string>
+	<key>update.available</key>
+	<string>Доступно обновление</string>
+	<key>update.download</key>
+	<string>Скачать</string>
+	<key>update.notification.body</key>
+	<string>Доступна версия %@</string>
+	<key>update.version</key>
+	<string>Версия %@</string>
 </dict>
 </plist>

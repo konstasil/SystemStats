@@ -347,6 +347,7 @@ extern "C" {
 @import AppKit;
 @import Foundation;
 @import ObjectiveC;
+@import UserNotifications;
 #endif
 
 #endif // defined(__OBJC__)
@@ -392,6 +393,14 @@ SWIFT_CLASS("_TtC11SystemStats14StatusItemView")
 @property (nonatomic, readonly) NSSize fittingSize;
 - (void)drawRect:(NSRect)dirtyRect;
 - (nonnull instancetype)initWithFrame:(NSRect)frameRect SWIFT_UNAVAILABLE;
+@end
+
+@class UNUserNotificationCenter;
+@class UNNotificationResponse;
+SWIFT_CLASS("_TtC11SystemStats13UpdateChecker")
+@interface UpdateChecker : NSObject <UNUserNotificationCenterDelegate>
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center didReceiveNotificationResponse:(UNNotificationResponse * _Nonnull)response withCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
 @end
 
 #endif // defined(__OBJC__)

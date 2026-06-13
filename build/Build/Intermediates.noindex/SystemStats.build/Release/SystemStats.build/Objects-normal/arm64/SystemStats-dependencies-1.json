@@ -437,6 +437,13 @@
     "moduleName" : "UniformTypeIdentifiers"
   },
   {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/UserNotifications.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/konstantin\/Pictures\/VNC-Viewer-7.15.1-MacOSX-universal\/SystemStats\/build\/ModuleCache.noindex\/UserNotifications-7GTH6QXZ73JM6XP9YFH7OEW20.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "UserNotifications"
+  },
+  {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/xpc.modulemap",
     "clangModulePath" : "\/Users\/konstantin\/Pictures\/VNC-Viewer-7.15.1-MacOSX-universal\/SystemStats\/build\/ModuleCache.noindex\/XPC-5I353JYAI20GTBKJYJYFVYB34.pcm",
     "isBridgingHeaderDependency" : false,

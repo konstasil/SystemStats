@@ -2,6 +2,7 @@ import SwiftUI
 
 struct PopoverView: View {
     @ObservedObject var monitor: SystemMonitor
+    @ObservedObject var updateChecker: UpdateChecker
     @AppStorage("showCPU") private var showCPU = true
     @AppStorage("showMemory") private var showMemory = true
     @AppStorage("showGPU") private var showGPU = true
@@ -12,6 +13,11 @@ struct PopoverView: View {
             HeaderSection
 
             Divider()
+
+            if updateChecker.hasUpdate {
+                UpdateBanner
+                Divider()
+            }
 
             if showCPU {
                 StatRow(
@@ -52,6 +58,7 @@ struct PopoverView: View {
         }
     }
 
+    @ViewBuilder
     private var HeaderSection: some View {
         HStack {
             Image(systemName: "chart.bar.fill")
@@ -65,6 +72,33 @@ struct PopoverView: View {
         }
     }
 
+    @ViewBuilder
+    private var UpdateBanner: some View {
+        HStack(spacing: 8) {
+            Image(systemName: "arrow.down.circle.fill")
+                .foregroundStyle(.blue)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(NSLocalizedString("update.available", comment: ""))
+                    .font(.caption)
+                    .fontWeight(.medium)
+                Text(String(format: NSLocalizedString("update.version", comment: ""), updateChecker.latestVersion))
+                    .font(.caption2)
+                    .foregroundStyle(.secondary)
+            }
+            Spacer()
+            Button(NSLocalizedString("update.download", comment: "")) {
+                updateChecker.openDownloadPage()
+            }
+            .buttonStyle(.plain)
+            .font(.caption)
+            .foregroundStyle(.blue)
+        }
+        .padding(8)
+        .background(Color.blue.opacity(0.1))
+        .cornerRadius(6)
+    }
+
+    @ViewBuilder
     private var GPUTempRow: some View {
         HStack {
             Image(systemName: "thermometer")
@@ -81,6 +115,7 @@ struct PopoverView: View {
         .padding(.vertical, 4)
     }
 
+    @ViewBuilder
     private var DisplayModeSection: some View {
         VStack(alignment: .leading, spacing: 6) {
             Text(NSLocalizedString("settings.display", comment: ""))
@@ -95,6 +130,7 @@ struct PopoverView: View {
         }
     }
 
+    @ViewBuilder
     private var FooterSection: some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack(spacing: 12) {
@@ -112,7 +148,15 @@ struct PopoverView: View {
             }
 
             HStack {
+                Button(NSLocalizedString("menu.update", comment: "")) {
+                    updateChecker.checkForUpdates()
+                }
+                .buttonStyle(.plain)
+                .font(.caption)
+                .foregroundStyle(.secondary)
+
                 Spacer()
+
                 Button(NSLocalizedString("menu.quit", comment: "")) {
                     NSApplication.shared.terminate(nil)
                 }

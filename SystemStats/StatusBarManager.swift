@@ -6,9 +6,11 @@ class StatusBarController: NSObject {
     private var popover: NSPopover!
     private var eventMonitor: Any?
     private var monitor: SystemMonitor
+    private var updateChecker: UpdateChecker
 
-    init(monitor: SystemMonitor) {
+    init(monitor: SystemMonitor, updateChecker: UpdateChecker) {
         self.monitor = monitor
+        self.updateChecker = updateChecker
         super.init()
 
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
@@ -23,10 +25,10 @@ class StatusBarController: NSObject {
         }
 
         popover = NSPopover()
-        popover.contentSize = NSSize(width: 260, height: 320)
+        popover.contentSize = NSSize(width: 260, height: 350)
         popover.behavior = .transient
         popover.animates = true
-        popover.contentViewController = NSHostingController(rootView: PopoverView(monitor: monitor))
+        popover.contentViewController = NSHostingController(rootView: PopoverView(monitor: monitor, updateChecker: updateChecker))
 
         eventMonitor = NSEvent.addGlobalMonitorForEvents(matching: [.leftMouseDown, .rightMouseDown]) { [weak self] _ in
             if let popover = self?.popover, popover.isShown {
@@ -107,7 +109,7 @@ class StatusItemView: NSView {
         for (index, value) in history.enumerated() {
             let x = graphFrame.origin.x + CGFloat(index) * stepX
             let normalized = min(value / 100.0, 1.0)
-            let y = graphFrame.origin.y + graphFrame.height - (CGFloat(normalized) * graphFrame.height)
+            let y = graphFrame.origin.y + (CGFloat(normalized) * graphFrame.height)
 
             if index == 0 {
                 path.move(to: CGPoint(x: x, y: y))
