@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>app.description</key>
+	<string>Лёгкий монитор системы для меню macOS</string>
+	<key>app.title</key>
+	<string>SystemStats</string>
+	<key>app.version</key>
+	<string>Версия 1.0</string>
+	<key>menu.cpu.title</key>
+	<string>Загрузка CPU</string>
+	<key>menu.gpu.title</key>
+	<string>Температура GPU</string>
+	<key>menu.memory.title</key>
+	<string>Память</string>
+	<key>menu.quit</key>
+	<string>Выйти</string>
+	<key>menu.settings</key>
+	<string>Настройки...</string>
+	<key>settings.cpu</key>
+	<string>Показывать загрузку CPU</string>
+	<key>settings.display</key>
+	<string>Отображение</string>
+	<key>settings.dock</key>
+	<string>Показывать в Dock</string>
+	<key>settings.gpu</key>
+	<string>Показывать температуру GPU</string>
+	<key>settings.interval</key>
+	<string>Интервал обновления</string>
+	<key>settings.language</key>
+	<string>Язык</string>
+	<key>settings.launch</key>
+	<string>Запускать при входе в систему</string>
+	<key>settings.memory</key>
+	<string>Показывать использование памяти</string>
+	<key>settings.section.behavior</key>
+	<string>Поведение</string>
+	<key>settings.section.language</key>
+	<string>Язык</string>
+	<key>settings.section.monitors</key>
+	<string>Мониторы</string>
+	<key>settings.tab.about</key>
+	<string>О приложении</string>
+	<key>settings.tab.appearance</key>
+	<string>Внешний вид</string>
+	<key>settings.tab.general</key>
+	<string>Основные</string>
+</dict>
+</plist>

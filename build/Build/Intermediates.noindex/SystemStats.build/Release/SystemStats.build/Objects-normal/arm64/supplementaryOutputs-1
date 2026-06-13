@@ -1,0 +1,12 @@
+{
+  "/Users/konstantin/Pictures/VNC-Viewer-7.15.1-MacOSX-universal/SystemStats/SystemStats/MiniGraphView.swift" : {
+    "abi-baseline-json" : "/Users/konstantin/Pictures/VNC-Viewer-7.15.1-MacOSX-universal/SystemStats/build/Build/Intermediates.noindex/SystemStats.build/Release/SystemStats.build/Objects-normal/arm64/SystemStats.abi.json",
+    "const-values" : "/Users/konstantin/Pictures/VNC-Viewer-7.15.1-MacOSX-universal/SystemStats/build/Build/Intermediates.noindex/SystemStats.build/Release/SystemStats.build/Objects-normal/arm64/SystemStats-primary.swiftconstvalues",
+    "dependencies" : "/Users/konstantin/Pictures/VNC-Viewer-7.15.1-MacOSX-universal/SystemStats/build/Build/Intermediates.noindex/SystemStats.build/Release/SystemStats.build/Objects-normal/arm64/SystemStats-primary.d",
+    "diagnostics" : "/Users/konstantin/Pictures/VNC-Viewer-7.15.1-MacOSX-universal/SystemStats/build/Build/Intermediates.noindex/SystemStats.build/Release/SystemStats.build/Objects-normal/arm64/SystemStats-primary.dia",
+    "objc-header" : "/Users/konstantin/Pictures/VNC-Viewer-7.15.1-MacOSX-universal/SystemStats/build/Build/Intermediates.noindex/SystemStats.build/Release/SystemStats.build/Objects-normal/arm64/SystemStats-Swift.h",
+    "swiftdoc" : "/Users/konstantin/Pictures/VNC-Viewer-7.15.1-MacOSX-universal/SystemStats/build/Build/Intermediates.noindex/SystemStats.build/Release/SystemStats.build/Objects-normal/arm64/SystemStats.swiftdoc",
+    "swiftmodule" : "/Users/konstantin/Pictures/VNC-Viewer-7.15.1-MacOSX-universal/SystemStats/build/Build/Intermediates.noindex/SystemStats.build/Release/SystemStats.build/Objects-normal/arm64/SystemStats.swiftmodule",
+    "swiftsourceinfo" : "/Users/konstantin/Pictures/VNC-Viewer-7.15.1-MacOSX-universal/SystemStats/build/Build/Intermediates.noindex/SystemStats.build/Release/SystemStats.build/Objects-normal/arm64/SystemStats.swiftsourceinfo"
+  }
+}

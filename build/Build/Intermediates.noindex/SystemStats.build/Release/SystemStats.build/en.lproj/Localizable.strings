@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>app.description</key>
+	<string>Lightweight system monitor for macOS menu bar</string>
+	<key>app.title</key>
+	<string>SystemStats</string>
+	<key>app.version</key>
+	<string>Version 1.0</string>
+	<key>menu.cpu.title</key>
+	<string>CPU Usage</string>
+	<key>menu.gpu.title</key>
+	<string>GPU Temperature</string>
+	<key>menu.memory.title</key>
+	<string>Memory</string>
+	<key>menu.quit</key>
+	<string>Quit</string>
+	<key>menu.settings</key>
+	<string>Settings...</string>
+	<key>settings.cpu</key>
+	<string>Show CPU Usage</string>
+	<key>settings.display</key>
+	<string>Display</string>
+	<key>settings.dock</key>
+	<string>Show in Dock</string>
+	<key>settings.gpu</key>
+	<string>Show GPU Temperature</string>
+	<key>settings.interval</key>
+	<string>Refresh Interval</string>
+	<key>settings.language</key>
+	<string>Language</string>
+	<key>settings.launch</key>
+	<string>Launch at Login</string>
+	<key>settings.memory</key>
+	<string>Show Memory Usage</string>
+	<key>settings.section.behavior</key>
+	<string>Behavior</string>
+	<key>settings.section.language</key>
+	<string>Language</string>
+	<key>settings.section.monitors</key>
+	<string>Monitors</string>
+	<key>settings.tab.about</key>
+	<string>About</string>
+	<key>settings.tab.appearance</key>
+	<string>Appearance</string>
+	<key>settings.tab.general</key>
+	<string>General</string>
+</dict>
+</plist>
