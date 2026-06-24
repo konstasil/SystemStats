@@ -5,6 +5,7 @@ A minimalist macOS menu bar widget that displays real-time system statistics wit
 ![macOS](https://img.shields.io/badge/macOS-13%2B-blue)
 ![Swift](https://img.shields.io/badge/Swift-5.0-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
+[![Donate](https://img.shields.io/badge/Donate-donatr.ee-6C5CE7?style=for-the-badge)](https://donatr.ee/konstasiil)
 
 ## Features
 
