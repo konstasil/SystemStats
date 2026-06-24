@@ -5,7 +5,6 @@ A minimalist macOS menu bar widget that displays real-time system statistics wit
 ![macOS](https://img.shields.io/badge/macOS-13%2B-blue)
 ![Swift](https://img.shields.io/badge/Swift-5.0-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
-[![Donate](https://img.shields.io/badge/Donate-donatr.ee-6C5CE7?style=for-the-badge)](https://donatr.ee/konstasiil)
 
 ## Features
 
@@ -97,6 +96,8 @@ SystemStats is built using pure Swift with no external dependencies:
 SystemStats only reads system statistics and does not collect or transmit any personal data.
 
 ## Donate
+
+https://konstasiil.vercel.app/
 
 TON: UQAUUmV4gogvx6sR4Fa06M31L8PKOd7u7T0QEg22Jy6cYUV-
 
